@@ -12,7 +12,7 @@
 
         <div class="content">
             
-            <img class="image" src="D:\Projets\Portfolio-Edline\src\assets\Nolark\PageAccueil.png" alt="page d'accueil de Nolark"/>
+            <img class="image" src="..\assets\Nolark\PageAccueil.png" alt="page d'accueil de Nolark"/>
             
             <p class="texteExplicatif">
                 L'un des premiers projets réalisés durant le BTS, il s'agit d'un projet de site de vents de casques pour moto,
@@ -20,7 +20,7 @@
                 PHP afin de récupérer les casques dans une base de données
             </p>
 
-            <img class="image" src="D:\Projets\Portfolio-Edline\src\assets\Nolark\Casques.png" alt="page d'accueil de Nolark"/>
+            <img class="image" src="..\assets\Nolark\Casques.png" alt="page d'accueil de Nolark"/>
        </div>
        
     </div>

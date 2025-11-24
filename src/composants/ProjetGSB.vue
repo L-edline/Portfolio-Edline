@@ -14,7 +14,7 @@
 
     <div class="content">
             
-            <img class="image" src="D:\Projets\Portfolio-Edline\src\assets\GSB\Connexion.png"/>
+            <img class="image" src="..\assets\GSB\Connexion.png"/>
             
             <p class="texteExplicatif">
                 La première étape fut de distinguer les visiteurs médicaux qui indiquent leurs frais, et
@@ -22,14 +22,14 @@
                 dans la base de données.
             </p>
 
-            <img class="image" src="D:\Projets\Portfolio-Edline\src\assets\GSB\ConnecteComptable.png" alt="page d'accueil de Nolark"/>
+            <img class="image" src="..\assets\GSB\ConnecteComptable.png" alt="page d'accueil de Nolark"/>
 
             <p class="texteExplicatif">
                 Une fois connecté en temps que comptable, j'ai accès à deux fonctionnalités : la validation
                 d'une fiche de frais d'un visiteur tel mois, et la mise en paiement des fiches de frais validées.
             </p>
 
-            <img class="image" src="D:\Projets\Portfolio-Edline\src\assets\GSB\ValiderFicheFrais.png" alt="page d'accueil de Nolark"/>
+            <img class="image" src="..\assets\GSB\ValiderFicheFrais.png" alt="page d'accueil de Nolark"/>
 
             <p class="texteExplicatif">
                 Dans le premier onglet, on choisis un visiteur puis un mois pour afficher la fiche de frais. On 
@@ -39,7 +39,7 @@
                 fiche de frais.
             </p>
 
-            <img class="image" src="D:\Projets\Portfolio-Edline\src\assets\GSB\paiementFrais.png" alt="page d'accueil de Nolark"/>
+            <img class="image" src="..\assets\GSB\paiementFrais.png" alt="page d'accueil de Nolark"/>
 
             <p class="texteExplicatif">
                 Dans le deuxième onglet, on choisis une fiche de frais à rembourser.

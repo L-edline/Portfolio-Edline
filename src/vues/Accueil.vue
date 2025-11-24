@@ -16,7 +16,7 @@
         </div>
 
         <div class="presentation">
-            <img class="photo" src="D:\Projets\Portfolio-Edline\src\assets\photo.jpg" alt="Photo de Louis EDLINE"/>
+            <img class="photo" src="..\assets\photo.jpg" alt="Photo de Louis EDLINE"/>
             <p class="texteLinkedin">
                 Autrefois simple passionné du numérique et du développement,
                 j'en ai aujourd'hui fait mon métier. <br>
