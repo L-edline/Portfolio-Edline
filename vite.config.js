@@ -10,6 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: '/Portfolio-Edline/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
