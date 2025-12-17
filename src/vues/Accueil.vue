@@ -1,6 +1,9 @@
 <script setup>
+    import FooterApp from '@/composants/FooterApp.vue' 
     import ProjetNolark from '@/composants/ProjetNolark.vue' 
-    import ProjetGSB from '@/composants/ProjetGSB.vue' 
+    import ProjetGSB from '@/composants/ProjetGSB.vue'
+    import ProjetCDC from '@/composants/ProjetCDC.vue'
+    import ProjetPokedex from '@/composants/ProjetPokedex.vue'
     import {ref} from 'vue'
 
     let typeProjet = ref('formation')
@@ -24,6 +27,14 @@
                 mon CV ainsi que les différents projets que j'ai pu accomplir au cours de
                 ma formation ou de mon travail, et ceux réalisés ailleurs.
             </p>
+
+            
+        </div>
+
+        <div class="CV">
+            <router-link to="/CV" class="routeur">
+                <h2>Mon CV</h2>
+            </router-link>
         </div>
 
         <div class="wrapperCenter">
@@ -55,7 +66,7 @@
                 </div>
 
                 <div v-if="typeProjet === 'entreprise'" class="listeProjets entreprise">
-                    <div class="tile" @click="projet = 'cdc'" style="cursor: pointer">
+                    <div class="tile" @click="projet = 'CDC'" style="cursor: pointer">
                         <p class="legende">Formulaire de CDC</p>
                     </div>
                 </div>
@@ -70,10 +81,14 @@
 
             <div v-if="projet === 'Nolark'"> <ProjetNolark/> </div>
             <div v-else-if="projet === 'GSB'"> <ProjetGSB/> </div>
+            <div v-else-if="projet === 'CDC'"> <ProjetCDC/> </div>
+            <div v-else-if="projet === 'pokedex'"> <ProjetPokedex/> </div>
             <div v-else></div>
 
         </div>
     </div>
+
+    <FooterApp/>
 </template>
 
 <style>
@@ -82,6 +97,7 @@
         background-color: rgb(60, 60, 59);
         color: rgb(76, 189, 76);
         font-family: 'Arial';
+        margin: 0px;
     }
 
     .wrapperCenter {
@@ -154,5 +170,17 @@
         display: flex;
     }
 
+    h3{
+        margin: 0%;
+    }
+
+    .CV {
+        display: flex;
+        justify-content: center;
+    }
+
+    .routeur {
+        color: green;
+    }
 
 </style>

@@ -5,6 +5,15 @@
 <template>
     <div class="introProjet">
         <h2 class="nomProjet">Projet Nolark</h2>
+        <div>
+            <h3>Compétences mises en oeuvre : </h3>
+            <ul class="competences">
+                <li>Gérer le patrimoine informatique</li>
+                <li>Développer la présence en ligne de l’organisation</li>
+                <li>Travailler en mode projet</li> 
+                <li>Organiser son développement professionnel</li>
+            </ul>
+        </div>
         <p class="descriptionProjet">
             Projet de site de vente de casques pour moto réalisé dans le cadre
             de ma première année de BTS, afin de nous initier au bases du développement web
@@ -52,5 +61,14 @@
         margin-top: 3cap;
         margin-bottom: 3cap;
     }
+
+    .descriptionProjet {
+        width: 75%;
+    }
+
+    .competences {
+        color: rgb(153, 247, 178);
+    }
+
 
 </style>

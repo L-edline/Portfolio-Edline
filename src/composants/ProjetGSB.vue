@@ -4,17 +4,27 @@
 
 <template>
     <div class="introProjet">
-       <h2 class="nomProjet">Projet Galaxy Swiss Bourdin</h2>
-       <p class="descriptionProjet">
+        <h2 class="nomProjet">Projet Galaxy Swiss Bourdin</h2>
+        <div>
+            <h3>Compétences mises en oeuvre : </h3>
+            <ul class="competences">
+                <li>Gérer le patrimoine informatique</li> 
+                <li>Développer la présence en ligne de l’organisation</li>
+                <li>Travailler en mode projet</li>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+                <li>Organiser son développement professionnel</li>
+            </ul>
+        </div>
+        <p class="descriptionProjet">
             Projet de site de gestion des frais de visiteurs médicaux réalisé dans le cadre
             de ma deuxième année de BTS, afin de mettre en pratique les connaissances acquises en
             dévelopemment web, gestion de version / projet ou cybersécurité.
-       </p>
+        </p>
     </div>
 
     <div class="content">
             
-            <img class="image" src="..\assets\GSB\Connexion.png"/>
+            <img class="image" src="..\assets\GSB\Connexion.png" alt="page de connexion de GSB"/>
             
             <p class="texteExplicatif">
                 La première étape fut de distinguer les visiteurs médicaux qui indiquent leurs frais, et
@@ -22,14 +32,14 @@
                 dans la base de données.
             </p>
 
-            <img class="image" src="..\assets\GSB\ConnecteComptable.png" alt="page d'accueil de Nolark"/>
+            <img class="image" src="..\assets\GSB\ConnecteComptable.png" alt="page d'accueil comptable de GSB"/>
 
             <p class="texteExplicatif">
                 Une fois connecté en temps que comptable, j'ai accès à deux fonctionnalités : la validation
                 d'une fiche de frais d'un visiteur tel mois, et la mise en paiement des fiches de frais validées.
             </p>
 
-            <img class="image" src="..\assets\GSB\ValiderFicheFrais.png" alt="page d'accueil de Nolark"/>
+            <img class="image" src="..\assets\GSB\ValiderFicheFrais.png" alt="Valider une fiche de frais"/>
 
             <p class="texteExplicatif">
                 Dans le premier onglet, on choisis un visiteur puis un mois pour afficher la fiche de frais. On 
@@ -39,7 +49,7 @@
                 fiche de frais.
             </p>
 
-            <img class="image" src="..\assets\GSB\paiementFrais.png" alt="page d'accueil de Nolark"/>
+            <img class="image" src="..\assets\GSB\paiementFrais.png" alt="Suivre le paiement d'une fiche de frais"/>
 
             <p class="texteExplicatif">
                 Dans le deuxième onglet, on choisis une fiche de frais à rembourser.
@@ -76,6 +86,14 @@
         text-align: center;
         margin-top: 3cap;
         margin-bottom: 3cap;
+    }
+
+    .descriptionProjet {
+        width: 75%;
+    }
+
+    .competences {
+        color: rgb(153, 247, 178);
     }
 
 </style>
