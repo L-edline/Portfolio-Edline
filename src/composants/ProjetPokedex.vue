@@ -49,8 +49,8 @@
                 déroulante, soit en important l'équipe entière avec le format normé utilisé par la communauté.
             </p>
 
-            <img class="image" src="..\assets\Pokedex\TeamBuilder.png" alt="Outil de construction d'équipe"/>
-            <img class="image" src="..\assets\Pokedex\TeamBuilderPaste.png" alt="Outil de construction d'équipe par import"/>
+            <img class="image" src="..\assets\Pokedex\teambuilder.png" alt="Outil de construction d'équipe"/>
+            <img class="image" src="..\assets\Pokedex\teambuilderPaste.png" alt="Outil de construction d'équipe par import"/>
        </div>
 
 </template>

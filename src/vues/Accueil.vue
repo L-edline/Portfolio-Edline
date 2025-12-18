@@ -98,6 +98,7 @@
         color: rgb(76, 189, 76);
         font-family: 'Arial';
         margin: 0px;
+        width: 100%;
     }
 
     .wrapperCenter {
