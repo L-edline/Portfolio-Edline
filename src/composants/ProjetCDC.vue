@@ -44,7 +44,7 @@
                 la création de nouveaux agents de TPM, l'envoi de mail résumés et le renouvellement du token de l'api.
             </p>
 
-            <img class="image" src="..\assets\CDC\Admin.png" alt="page d'accueil de Nolark"/>
+            <img class="image" src="..\assets\CDC\Admin.png" alt="page d'accueil de Nolark"/>.
        </div>
     
 
@@ -52,6 +52,10 @@
 </template>
 
 <style scoped>
+
+    .nomProjet {
+        text-align: center;
+    }
 
     .introProjet {
         margin-top: 5cap;

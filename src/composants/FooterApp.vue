@@ -24,7 +24,7 @@
 
         <div class="el">
             <p class="contact">Ledline@portfolio:~$ LinkedIn</p>
-            <p class="contact res"><a class="res" href="www.linkedin.com/in/louis-edline-5656b9354">Louis Edline</a></p>
+            <p class="contact res"><a class="res" href="https://linkedin.com/in/louis-edline-5656b9354">Louis Edline</a></p>
         </div>
     </div>
 

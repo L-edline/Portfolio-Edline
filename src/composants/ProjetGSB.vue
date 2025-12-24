@@ -64,6 +64,10 @@
 
 <style scoped>
 
+    .nomProjet {
+        text-align: center;
+    }
+
     .introProjet {
         margin-top: 5cap;
         display:flex;

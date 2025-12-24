@@ -104,6 +104,8 @@
     .wrapperCenter {
         display: flex;
         justify-content: center;
+        width: 100%;
+        overflow: auto;
     }
 
     .intro {
@@ -121,17 +123,27 @@
         display: flex;
         margin-top: 5cap;
         margin-bottom: 3cap;
+        background-color: rgb(28, 28, 28);
+        padding: 1cap;
+        padding-bottom: 2cap;
+        border-style: solid;
+        border-color: black;
+        border-left: none;
+        border-right: none;
+        border-width: 0.3cap;
+        align-items: center;
     }
 
     .photo {
         width: 13cap;
-        margin-top: 2cap;
         height: fit-content;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10cap;
     }   
 
     .texteLinkedin {
         margin-left: 3cap;
-        margin-top: 2cap;
         width: 30cap;
     }
 
