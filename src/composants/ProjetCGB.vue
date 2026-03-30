@@ -25,13 +25,46 @@
 
     <div class="content">
             
+            <img class="image" src="..\assets\CGB\logo.png" alt="logo cgb"/>
+
+            <div class="listTechno">
+                <p class="texteTechno">Technologies utilisées : </p>
+                <div class="listeT">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                    <i class="devicon-spring-original colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-postman-plain colored"></i>
+                </div>
+            </div>
+
             <p class="texteExplicatif">
-                L'application est composée de deux parties : un rapport journalier envoyé par mail tout les jours
-                vers 19h à une liste de personnes cocernées, et des vérifications tout les quarts d'heures qui envoient une
-                alerte par mail en cas d'echec.
+                L'application est une API REST réalisée avec le framework java spring boot. 
+                Sa fonctionnalité principale est de permettre la réalisation de virements simples.
+                J'ai utilisé l'outil Postman afin de tester les différentes requêtes :
             </p>
 
-        
+            <img class="image" src="..\assets\CGB\postman_CGB.png" alt="requête de transfert avec postman"/>
+
+            <p class="texteExplicatif">
+                Il est également possible de supprimer un virement qui a été fait. 
+            </p>
+
+            <img class="image" src="..\assets\CGB\suppVirCGB.png" alt="requête de suppresion d'un virement"/>
+
+            <!--
+            <p class="texteExplicatif">
+                Il a fallu intégrer la possibilité d'effectuer des virements en lots, comme ceci :
+            </p>
+
+            <img class="image" src="..\assets\CGB\lotsCGB.png" alt="requête de virements en lot"/>
+
+            <p class="texteExplicatif">
+                Et la possibilité d'assigner différents rôles avec des droits de requêtes différents :
+            </p>  
+
+            <img class="image" src="..\assets\CGB\rolesCGB.png" alt="roles"/>
+            -->
+
        </div>
     
 
@@ -39,6 +72,31 @@
 </template>
 
 <style scoped>
+
+    i {
+        font-size: 5em;
+    }
+
+    .listTechno {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5cap;
+    }
+
+    .texteTechno {
+        width: 40%;
+        text-align: center;
+    }
+
+    .listeT {
+        width: 100%;
+        height: 6cap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
     .nomProjet {
         text-align: center;

@@ -23,11 +23,24 @@
 
     <div class="content">
             
+            <div class="listTechno">
+                <p class="texteTechno">Technologies utilisées : </p>
+                <div class="listeT">
+                    <i class="devicon-symfony-original-wordmark"></i>
+                    <i class="devicon-oracle-original colored"></i>
+                    <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+            </div>
             
             <p class="texteExplicatif">
                 L'application est composée de deux parties : un rapport journalier envoyé par mail tout les jours
-                vers 19h à une liste de personnes cocernées, et des vérifications tout les quarts d'heures qui envoient une
+                vers 19h à une liste de personnes concernées, et des vérifications tout les quarts d'heures qui envoient une
                 alerte par mail en cas d'echec.
+            </p>
+
+            <p class="texteExplicatif">
+                L'application s'articule comme ceci :
             </p>
 
             <img class="image" src="..\assets\GED\schemaGED.png" alt="schéma fonctionnel de l'app"/>
@@ -38,6 +51,32 @@
 </template>
 
 <style scoped>
+
+    i {
+        font-size: 5em;
+        color: white;
+    }
+
+    .listTechno {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5cap;
+    }
+
+    .texteTechno {
+        width: 40%;
+        text-align: center;
+    }
+
+    .listeT {
+        width: 100%;
+        height: 6cap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
     .nomProjet {
         text-align: center;

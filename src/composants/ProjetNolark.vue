@@ -20,13 +20,30 @@
         </p>
 
         <div class="content">
+
+            <img class="image" src="..\assets\Nolark\logo.png" alt="logo de Nolark"/>
             
+            <div class="listTechno">
+                <p class="texteTechno">Technologies utilisées : </p>
+                <div class="listeT">
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-php-plain colored"></i>
+                    <i class="devicon-mysql-plain-wordmark"></i>
+                </div>
+            </div> 
+
+            <p class="texteExplicatif">
+                L'un des premiers projets réalisés durant le BTS, il s'agit d'un projet de site de vente de casques pour moto,
+                construit avec HTML, CSS et JavaScript dans sa version classique.
+            </p>
+
             <img class="image" src="..\assets\Nolark\PageAccueil.png" alt="page d'accueil de Nolark"/>
             
             <p class="texteExplicatif">
-                L'un des premiers projets réalisés durant le BTS, il s'agit d'un projet de site de vents de casques pour moto,
-                construit avec HTML, CSS et JavaScript dans sa version classique, auquel nous avons rajouté du
-                PHP afin de récupérer les casques dans une base de données
+                j'ai ensuite utilisé
+                PHP afin de pouvoir récupérer les casques dans une base de données.
             </p>
 
             <img class="image" src="..\assets\Nolark\Casques.png" alt="page d'accueil de Nolark"/>
@@ -37,6 +54,32 @@
 </template>
 
 <style scoped>
+
+    i {
+        font-size: 5em;
+        color: white;
+    }
+
+    .listTechno {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5cap;
+    }
+
+    .texteTechno {
+        width: 40%;
+        text-align: center;
+    }
+
+    .listeT {
+        width: 100%;
+        height: 6cap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
     .nomProjet {
         text-align: center;

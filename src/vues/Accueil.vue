@@ -16,6 +16,7 @@
 
 <template>
     <HeaderApp/>
+    
     <div class="page">
         <div class="intro">
             <h1>Portfolio de Louis EDLINE</h1>

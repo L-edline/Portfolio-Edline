@@ -22,13 +22,27 @@
     </div>
 
     <div class="content">
-            
-            <img class="image" src="..\assets\Pokedex\Accueil.png" alt="Accueil"/>
+
+            <div class="listTechno">
+                <p class="texteTechno">Technologies utilisées : </p>
+                <div class="listeT">
+                    <i class="devicon-laravel-original colored"></i>
+                    <i class="devicon-vuejs-plain-wordmark colored"></i>
+                    <i class="devicon-inertiajs-plain-wordmark colored"></i>
+                    <i class="devicon-mysql-plain-wordmark"></i>
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+            </div>
             
             <p class="texteExplicatif">
-                La page d'accueil permet d'accéder aux différentes catégories de l'application,
-                comme par exemple la liste des pokemons (la principale), affichée depuis l'APIs, 
-                qu'il est possible de trier par leur nom et/ou par les différentes caractéristiques
+                La page d'accueil permet d'accéder aux différentes catégories de l'application : 
+            </p>
+
+            <img class="image" src="..\assets\Pokedex\Accueil.png" alt="Accueil"/>
+
+            <p class="texteExplicatif">
+                La page principale est la liste des pokemons, affichée depuis l'API, 
+                il est possible de les trier par leur nom et/ou par les différentes caractéristiques
                 qu'ils peuvent avoir :
             </p>
 
@@ -38,7 +52,7 @@
                 Chaque "tuile" amène vers une page détaillée avec toutes les informations de pokéAPI
                 et des informations d'une autre API concernant toutes les manières de jouer ce pokemon de la 
                 manière la plus efficace dans les différents tiers compétitifs de la communauté. Ce schéma 
-                liste -> détail est utilisé dans tout les onglets correspondant aux catégories de pokéAPI.
+                liste vers détail est utilisé dans tout les onglets correspondant aux catégories de pokéAPI.
             </p>
 
             <img class="image" src="..\assets\Pokedex\DetailPoke.png" alt="Detail d'un pokémon"/>
@@ -46,7 +60,7 @@
             <p class="texteExplicatif">
                 Une évolution de cette encyclopédie fut l'ajout d'un outil permettant de tester
                 la viabilité défensive d'une équipe, soit en sélectionnant les 6 pokémon dans une liste
-                déroulante, soit en important l'équipe entière avec le format normé utilisé par la communauté.
+                déroulante, soit en important l'équipe entière avec le format normalisé utilisé par la communauté.
             </p>
 
             <img class="image" src="..\assets\Pokedex\teambuilder.png" alt="Outil de construction d'équipe"/>
@@ -56,6 +70,32 @@
 </template>
 
 <style scoped>
+
+    i {
+        font-size: 5em;
+        color: white;
+    }
+
+    .listTechno {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5cap;
+    }
+
+    .texteTechno {
+        width: 40%;
+        text-align: center;
+    }
+
+    .listeT {
+        width: 100%;
+        height: 6cap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
     .nomProjet {
         text-align: center;

@@ -24,23 +24,34 @@
     </div>
 
     <div class="content">
-            
-            <img class="image" src="..\assets\GSB\Connexion.png" alt="page de connexion de GSB"/>
-            
+
+            <img class="image" src="..\assets\GSB\logo.png" alt="logo de GSB"/>
+
+            <div class="listTechno">
+                <p class="texteTechno">Technologies utilisées : </p>
+                <div class="listeT">
+                    <i class="devicon-php-plain colored"></i>
+                    <i class="devicon-mariadb-original-wordmark"></i>
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-bootstrap-plain colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+            </div>
+
             <p class="texteExplicatif">
                 La première étape fut de distinguer les visiteurs médicaux qui indiquent leurs frais, et
                 les comptables qui valident et mettent en paiement (ou pas) ces frais. Pour cela, j'ai utilisé une vue
                 dans la base de données.
             </p>
 
-            <img class="image" src="..\assets\GSB\ConnecteComptable.png" alt="page d'accueil comptable de GSB"/>
-
+            <img class="image" src="..\assets\GSB\Connexion.png" alt="page de connexion de GSB"/>
+            
             <p class="texteExplicatif">
                 Une fois connecté en temps que comptable, j'ai accès à deux fonctionnalités : la validation
                 d'une fiche de frais d'un visiteur tel mois, et la mise en paiement des fiches de frais validées.
             </p>
 
-            <img class="image" src="..\assets\GSB\ValiderFicheFrais.png" alt="Valider une fiche de frais"/>
+            <img class="image" src="..\assets\GSB\ConnecteComptable.png" alt="page d'accueil comptable de GSB"/>
 
             <p class="texteExplicatif">
                 Dans le premier onglet, on choisis un visiteur puis un mois pour afficher la fiche de frais. On 
@@ -50,13 +61,16 @@
                 fiche de frais.
             </p>
 
-            <img class="image" src="..\assets\GSB\paiementFrais.png" alt="Suivre le paiement d'une fiche de frais"/>
+            <img class="image" src="..\assets\GSB\ValiderFicheFrais.png" alt="Valider une fiche de frais"/>
 
             <p class="texteExplicatif">
                 Dans le deuxième onglet, on choisis une fiche de frais à rembourser.
                 Le comptable effectue les opérations de son côté, et indique que la fiche est 
                 remboursée quand il a fini.
             </p>
+
+            <img class="image" src="..\assets\GSB\paiementFrais.png" alt="Suivre le paiement d'une fiche de frais"/>
+  
        </div>
     
 
@@ -64,6 +78,32 @@
 </template>
 
 <style scoped>
+
+    i {
+        font-size: 5em;
+        color: white;
+    }
+
+    .listTechno {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5cap;
+    }
+
+    .texteTechno {
+        width: 40%;
+        text-align: center;
+    }
+
+    .listeT {
+        width: 100%;
+        height: 6cap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
     .nomProjet {
         text-align: center;

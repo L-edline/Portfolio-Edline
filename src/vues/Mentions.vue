@@ -35,6 +35,7 @@
                 <div class="texte">
                     <p>L’ensemble du contenu présent sur ce site (textes, images, graphismes, logo, icônes, etc.) est la propriété exclusive de l’éditeur, sauf mention contraire.</p>
                     <p>Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable.</p>
+                    <p>Les logos des différentes technologies proviennent du site <a class="texte" href="https://devicon.dev/">devicon.dev</a>.</p> 
                 </div> 
             </div>
             
