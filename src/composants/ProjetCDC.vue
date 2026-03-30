@@ -10,7 +10,6 @@
             <ul class="competences">
                 <li>Gérer le patrimoine informatique</li>
                 <li>Répondre aux incidents et aux demandes d’assistance et d’évolution</li>
-                <li>Développer la présence en ligne de l’organisation</li>
                 <li>Travailler en mode projet</li>
                 <li>Mettre à disposition des utilisateurs un service informatique</li>
                 <li>Organiser son développement professionnel</li>
@@ -83,6 +82,7 @@
 
     .descriptionProjet {
         width: 75%;
+        text-align: center;
     }
 
     .competences {

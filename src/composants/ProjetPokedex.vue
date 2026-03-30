@@ -87,6 +87,7 @@
 
     .descriptionProjet {
         width: 75%;
+        text-align: center;
     }
 
     .competences {

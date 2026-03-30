@@ -4,35 +4,37 @@
 
 <template>
     <div class="introProjet">
-        <h2 class="nomProjet">Projet Nolark</h2>
-        <div>
+       <h2 class="nomProjet">Projet Credit General Banque</h2>
+       <div>
             <h3>Compétences mises en oeuvre : </h3>
             <ul class="competences">
-                <li>Gérer le patrimoine informatique</li>
+                <li>Gérer le patrimoine informatique</li> 
                 <li>Répondre aux incidents et aux demandes d’assistance et d’évolution</li>
                 <li>Développer la présence en ligne de l’organisation</li>
+                <li>Travailler en mode projet</li>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
                 <li>Organiser son développement professionnel</li>
             </ul>
         </div>
         <p class="descriptionProjet">
-            Projet de site de vente de casques pour moto réalisé dans le cadre
-            de ma première année de BTS, afin de nous initier au bases du développement web
+            Projet d'api REST pour les virements en lots réalisé dans le cadre
+            de ma deuxième année de BTS, afin de mettre en pratique les connaissances acquises en
+            dévelopemment java, gestion de version / projet et cybersécurité.
         </p>
+    </div>
 
-        <div class="content">
-            
-            <img class="image" src="..\assets\Nolark\PageAccueil.png" alt="page d'accueil de Nolark"/>
+    <div class="content">
             
             <p class="texteExplicatif">
-                L'un des premiers projets réalisés durant le BTS, il s'agit d'un projet de site de vents de casques pour moto,
-                construit avec HTML, CSS et JavaScript dans sa version classique, auquel nous avons rajouté du
-                PHP afin de récupérer les casques dans une base de données
+                L'application est composée de deux parties : un rapport journalier envoyé par mail tout les jours
+                vers 19h à une liste de personnes cocernées, et des vérifications tout les quarts d'heures qui envoient une
+                alerte par mail en cas d'echec.
             </p>
 
-            <img class="image" src="..\assets\Nolark\Casques.png" alt="page d'accueil de Nolark"/>
+        
        </div>
-       
-    </div>
+    
+
 
 </template>
 

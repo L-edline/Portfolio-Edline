@@ -1,9 +1,12 @@
 <script setup>
+    import HeaderApp from '@/composants/HeaderApp.vue'
     import FooterApp from '@/composants/FooterApp.vue' 
     import ProjetNolark from '@/composants/ProjetNolark.vue' 
     import ProjetGSB from '@/composants/ProjetGSB.vue'
     import ProjetCDC from '@/composants/ProjetCDC.vue'
     import ProjetPokedex from '@/composants/ProjetPokedex.vue'
+    import ProjetSurvGED from '@/composants/ProjetSurvGED.vue'
+    import ProjetCGB from '@/composants/ProjetCGB.vue'
     import {ref} from 'vue'
 
     let typeProjet = ref('formation')
@@ -12,6 +15,7 @@
 </script>
 
 <template>
+    <HeaderApp/>
     <div class="page">
         <div class="intro">
             <h1>Portfolio de Louis EDLINE</h1>
@@ -24,16 +28,9 @@
                 Autrefois simple passionné du numérique et du développement,
                 j'en ai aujourd'hui fait mon métier. <br>
                 Vous découvrirez sur mon portfolio
-                mon CV ainsi que les différents projets que j'ai pu accomplir au cours de
+                les différents projets que j'ai pu accomplir au cours de
                 ma formation ou de mon travail, et ceux réalisés ailleurs.
             </p>
-
-            <div class="CV">
-                <router-link to="/CV" class="routeur">
-                    <h2>Lien vers le CV</h2>
-                </router-link>
-            </div>
-            
         </div>
 
         <div class="wrapperCenter">
@@ -62,11 +59,18 @@
                     <div class="tile" @click="projet = 'GSB'" style="cursor: pointer" role="button" tabindex="-1">
                         <p class="legende">Application GSB</p> 
                     </div>
+
+                    <div class="tile" @click="projet = 'CGB'" style="cursor: pointer" role="button" tabindex="-1">
+                        <p class="legende">API de CGB</p> 
+                    </div>
                 </div>
 
                 <div v-if="typeProjet === 'entreprise'" class="listeProjets entreprise">
                     <div class="tile" @click="projet = 'CDC'" style="cursor: pointer" role="button" tabindex="-1">
                         <p class="legende">Formulaire de CDC</p>
+                    </div>
+                    <div class="tile" @click="projet = 'GED'" style="cursor: pointer" role="button" tabindex="-1">
+                        <p class="legende">Surveillance GED</p>
                     </div>
                 </div>
 
@@ -80,7 +84,9 @@
 
             <div v-if="projet === 'Nolark'"> <ProjetNolark/> </div>
             <div v-else-if="projet === 'GSB'"> <ProjetGSB/> </div>
+            <div v-else-if="projet === 'CGB'"> <ProjetCGB/> </div>
             <div v-else-if="projet === 'CDC'"> <ProjetCDC/> </div>
+            <div v-else-if="projet === 'GED'"> <ProjetSurvGED/> </div>
             <div v-else-if="projet === 'pokedex'"> <ProjetPokedex/> </div>
             <div v-else></div>
 
@@ -111,6 +117,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 5cap;
+        background: repeating-linear-gradient(
+            -45deg, 
+            rgb(60, 60, 59) 2px, 
+            rgb(44, 44, 43) 3px, 
+            rgb(60, 60, 59) 4px, 
+            rgb(60, 60, 59) 7px
+        );
     } 
 
     h1 {
@@ -120,7 +134,7 @@
 
     .presentation {
         display: flex;
-        margin-top: 5cap;
+        /*margin-top: 5cap;*/
         margin-bottom: 3cap;
         background-color: rgb(28, 28, 28);
         padding: 1cap;
@@ -200,19 +214,6 @@
 
     h3{
         margin: 0%;
-    }
-
-    .CV {
-        display: flex;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: 35cap;
-        background-color: wheat;
-        padding-left: 1cap;
-        padding-right: 1cap;
-        border-style: solid;
-        border-color: black;
-        border-radius: 1cap;
     }
 
     .routeur {

@@ -1,22 +1,20 @@
 <script setup>
-    import FooterApp from '@/composants/FooterApp.vue' 
+    import FooterApp from '@/composants/FooterApp.vue'
+    import HeaderApp from '@/composants/HeaderApp.vue';
     import { VuePDF, usePDF } from '@tato30/vue-pdf'
 
     const { pdf } = usePDF('CV_louis_edline.pdf')
 </script>
 
 <template>
+    <HeaderApp/>
     <div class="page">
-        <h1>CV de Louis EDLINE</h1>
-        
-        <div class="lienretour">
-            <router-link to="/" class="routeur">
-                <h2>Retour au portfolio</h2>
-            </router-link>
-        </div>
-        
-        <div class="cv">
-            <VuePDF :pdf="pdf" />
+        <h1 class="titre">CV de Louis EDLINE</h1>
+
+        <div class="content">
+            <div class="cv">
+                <VuePDF :pdf="pdf" />
+            </div>
         </div>
     </div>
 
@@ -24,7 +22,27 @@
 </template>
 
 <style scoped>
-    .page {
+
+    .titre {
+        background: repeating-linear-gradient(
+            -45deg, 
+            rgb(60, 60, 59) 2px, 
+            rgb(44, 44, 43) 3px, 
+            rgb(60, 60, 59) 4px, 
+            rgb(60, 60, 59) 7px
+        );
+        margin: 0;
+        padding: 1cap;
+        border-style: solid;
+        border-color: black;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-width: 0.1cap;
+        text-align: center;
+    }
+
+    .content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -35,23 +53,6 @@
         overflow: auto;
         display: flex;
         justify-content: center;
-    }
-
-    .routeur {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-    }
-
-    .lienretour {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2cap;
-        background-color: wheat;
-        padding-left: 1cap;
-        padding-right: 1cap;
-        border-style: solid;
-        border-color: black;
-        border-radius: 1cap;
     }
 
 </style>

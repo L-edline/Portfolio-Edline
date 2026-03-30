@@ -9,6 +9,7 @@
             <h3>Compétences mises en oeuvre : </h3>
             <ul class="competences">
                 <li>Gérer le patrimoine informatique</li> 
+                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution</li>
                 <li>Développer la présence en ligne de l’organisation</li>
                 <li>Travailler en mode projet</li>
                 <li>Mettre à disposition des utilisateurs un service informatique</li>
@@ -18,7 +19,7 @@
         <p class="descriptionProjet">
             Projet de site de gestion des frais de visiteurs médicaux réalisé dans le cadre
             de ma deuxième année de BTS, afin de mettre en pratique les connaissances acquises en
-            dévelopemment web, gestion de version / projet ou cybersécurité.
+            dévelopemment web, gestion de version / projet et cybersécurité.
         </p>
     </div>
 
@@ -94,6 +95,7 @@
 
     .descriptionProjet {
         width: 75%;
+        text-align: center;
     }
 
     .competences {
