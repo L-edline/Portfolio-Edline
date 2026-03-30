@@ -49,9 +49,9 @@
                 Il est également possible de supprimer un virement qui a été fait. 
             </p>
 
+            <!--
             <img class="image" src="..\assets\CGB\suppVirCGB.png" alt="requête de suppresion d'un virement"/>
 
-            <!--
             <p class="texteExplicatif">
                 Il a fallu intégrer la possibilité d'effectuer des virements en lots, comme ceci :
             </p>
