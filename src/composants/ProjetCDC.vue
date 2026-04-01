@@ -1,5 +1,21 @@
 <script>
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+    import 'swiper/css';
+    import 'swiper/css/pagination';
+    import '../style.css';
+    import { Mousewheel, Keyboard, Pagination } from 'swiper/modules';
 
+    export default {
+        components: {
+        Swiper,
+        SwiperSlide,
+        },
+        setup() {
+            return {
+                modules: [Mousewheel, Keyboard, Pagination],
+            };
+        },
+    };
 </script>
 
 <template>
@@ -8,11 +24,11 @@
        <div>
             <h3>Compétences mises en oeuvre : </h3>
             <ul class="competences">
-                <li>Gérer le patrimoine informatique</li>
-                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution</li>
-                <li>Travailler en mode projet</li>
-                <li>Mettre à disposition des utilisateurs un service informatique</li>
-                <li>Organiser son développement professionnel</li>
+                <li>Gérer le patrimoine informatique (B1.1)</li>
+                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution (B1.2)</li>
+                <li>Travailler en mode projet (B1.4)</li>
+                <li>Mettre à disposition des utilisateurs un service informatique (B1.5)</li>
+                <li>Organiser son développement professionnel (B1.6)</li>
             </ul>
         </div>
         <p class="descriptionProjet">
@@ -34,32 +50,55 @@
                     <i class="devicon-git-plain colored"></i>
                 </div>
             </div>
-
-            <img class="image" src="..\assets\CDC\Accueil.png" alt="Accueil de l'application"/>
             
-            <p class="texteExplicatif">
-                Le formulaire consiste en une série de champs qui seront envoyés à l'API de TPM : 
+            <p class="texte">
+                Le formulaire a été réalisé avec Laravel, vueJS et InertiaJS.
+                Il comprends un système d'authentification complet. 
+                Une fois complété, le formulaire est envoyé vers l'API de TPM qui s'occupera de la demande.
             </p>
 
-            <img class="image" src="..\assets\CDC\API.jpg" alt="Api de TPM"/>
-
             <p class="texteExplicatif">
-                Voici le diagramme fonctionnel de l'application :
-            </p>
-
-            <img class="image" src="..\assets\CDC\DiagrammeFonctionnel.png" alt="Diagramme fonctionnel de l'application"/>
-
-            <p class="texteExplicatif">
-                Et voici la partie Admin de l'application, qui permet la gestion des formulaires envoyés,
+                L'application possède également une partie réservée aux administrateurs, qui permet la gestion des formulaires envoyés,
                 la création de nouveaux agents de TPM, l'envoi de mail résumés et le renouvellement du token de l'api.
             </p>
 
-            <img class="image" src="..\assets\CDC\Admin.png" alt="page d'accueil de Nolark"/>.
+            <swiper
+                :slidesPerView="1"
+                :spaceBetween="0"
+                :keyboard="{
+                    enabled: true,
+                }"
+                
+                :pagination="{
+                    clickable: true,
+                    dynamicBullets: true,
+                }"
+                :rewind="true"
+                :modules="modules"
+                class="mySwiper"
+            >
+                <swiper-slide>
+                    <img class="image" src="..\assets\CDC\Accueil.png" alt="Accueil de l'application"/>
+                </swiper-slide>
+                <swiper-slide>
+                    <img class="image" src="..\assets\CDC\API.jpg" alt="Api de TPM"/>
+                </swiper-slide>
+                <swiper-slide>
+                    <img class="image" src="..\assets\CDC\DiagrammeFonctionnel.png" alt="Diagramme fonctionnel de l'application"/>
+                </swiper-slide>
+                <swiper-slide>
+                    <img class="image" src="..\assets\CDC\Admin.png" alt="composant admin"/>.
+                </swiper-slide>
+            </swiper>
        </div>
     
 </template>
 
 <style scoped>
+
+    .mySwiper {
+        background-color: rgb(255, 255, 255);
+    }
 
     i {
         font-size: 5em;
@@ -105,7 +144,7 @@
     }
 
     .image {
-        width: 55%;
+        width: 100%;
     }
 
     .texteExplicatif {
@@ -113,6 +152,11 @@
         text-align: center;
         margin-top: 3cap;
         margin-bottom: 3cap;
+    }
+
+    .texte {
+        width: 40%;
+        text-align: center;
     }
 
     .descriptionProjet {

@@ -1,5 +1,21 @@
 <script>
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+    import 'swiper/css';
+    import 'swiper/css/pagination';
+    import '../style.css';
+    import { Mousewheel, Keyboard, Pagination } from 'swiper/modules';
 
+    export default {
+        components: {
+        Swiper,
+        SwiperSlide,
+        },
+        setup() {
+            return {
+                modules: [Mousewheel, Keyboard, Pagination],
+            };
+        },
+    };
 </script>
 
 <template>
@@ -8,12 +24,12 @@
        <div>
             <h3>Compétences mises en oeuvre : </h3>
             <ul class="competences">
-                <li>Gérer le patrimoine informatique</li> 
-                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution</li>
-                <li>Développer la présence en ligne de l’organisation</li>
-                <li>Travailler en mode projet</li>
-                <li>Mettre à disposition des utilisateurs un service informatique</li>
-                <li>Organiser son développement professionnel</li>
+                <li>Gérer le patrimoine informatique (B1.1)</li> 
+                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution (B1.2)</li>
+                <li>Développer la présence en ligne de l’organisation (B1.3)</li>
+                <li>Travailler en mode projet (B1.4)</li>
+                <li>Mettre à disposition des utilisateurs un service informatique (B1.5)</li>
+                <li>Organiser son développement professionnel (B1.6)</li>
             </ul>
         </div>
         <p class="descriptionProjet">
@@ -24,11 +40,9 @@
     </div>
 
     <div class="content">
-            
-            <img class="image" src="..\assets\CGB\logo.png" alt="logo cgb"/>
-
+        
             <div class="listTechno">
-                <p class="texteTechno">Technologies utilisées : </p>
+                <p class="texteTechno">Technologies utilisées :</p>
                 <div class="listeT">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
                     <i class="devicon-spring-original colored"></i>
@@ -39,32 +53,39 @@
 
             <p class="texteExplicatif">
                 L'application est une API REST réalisée avec le framework java spring boot. 
-                Sa fonctionnalité principale est de permettre la réalisation de virements simples.
-                J'ai utilisé l'outil Postman afin de tester les différentes requêtes :
-            </p>
+                Sa fonctionnalité principale est de permettre la réalisation de virements.
+                J'ai utilisé l'outil Postman afin de tester les différentes requêtes 
+                (Création et suppression de transferts).
+            </p> 
 
-            <img class="image" src="..\assets\CGB\postman_CGB.png" alt="requête de transfert avec postman"/>
-
-            <p class="texteExplicatif">
-                Il est également possible de supprimer un virement qui a été fait. 
-            </p>
-
-            <!--
-            <img class="image" src="..\assets\CGB\suppVirCGB.png" alt="requête de suppresion d'un virement"/>
-
-            <p class="texteExplicatif">
-                Il a fallu intégrer la possibilité d'effectuer des virements en lots, comme ceci :
-            </p>
-
-            <img class="image" src="..\assets\CGB\lotsCGB.png" alt="requête de virements en lot"/>
-
-            <p class="texteExplicatif">
-                Et la possibilité d'assigner différents rôles avec des droits de requêtes différents :
-            </p>  
-
-            <img class="image" src="..\assets\CGB\rolesCGB.png" alt="roles"/>
-            -->
-
+            <swiper
+                :slidesPerView="1"
+                :spaceBetween="0"
+                :keyboard="{
+                    enabled: true,
+                }"
+                
+                :pagination="{
+                    clickable: true,
+                    dynamicBullets: true,
+                }"
+                :rewind="true"
+                :modules="modules"
+                class="mySwiper"
+            >
+                <swiper-slide>
+                    <img class="image" src="..\assets\CGB\postman.png" alt="interface de l'outil postman"/>
+                </swiper-slide>
+                <swiper-slide>
+                    <img class="image" src="..\assets\CGB\controleurPost.png" alt="controleur POST"/>
+                </swiper-slide>
+                <swiper-slide>
+                    <img class="image" src="..\assets\CGB\service.png" alt="service"/>
+                </swiper-slide>
+                <swiper-slide>
+                    <img class="image" src="..\assets\CGB\test.png" alt="test unitaire"/>
+                </swiper-slide>
+            </swiper>
        </div>
     
 
@@ -72,6 +93,10 @@
 </template>
 
 <style scoped>
+
+    .mySwiper {
+        background-color: rgb(222, 222, 222);
+    }
 
     i {
         font-size: 5em;
@@ -116,7 +141,7 @@
     }
 
     .image {
-        width: 55%;
+        width: 100%;
     }
 
     .texteExplicatif {
@@ -124,6 +149,11 @@
         text-align: center;
         margin-top: 3cap;
         margin-bottom: 3cap;
+    }
+
+    .texte {
+        width: 40%;
+        text-align: center;
     }
 
     .descriptionProjet {

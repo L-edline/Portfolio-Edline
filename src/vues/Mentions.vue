@@ -31,6 +31,14 @@
             </div>
 
             <div class="paragraphe">
+                <p class="titreparagraphe">Confidentialité</p>
+                <div class="texte">
+                    <p>Ce site ne collecte aucune donnée personnelle.</p>
+                    <p>Ainsi, ce site ne traite aucune donnée personnelle.</p> 
+                </div> 
+            </div>
+
+            <div class="paragraphe">
                 <p class="titreparagraphe">Propriété intellectuelle</p>
                 <div class="texte">
                     <p>L’ensemble du contenu présent sur ce site (textes, images, graphismes, logo, icônes, etc.) est la propriété exclusive de l’éditeur, sauf mention contraire.</p>

@@ -1,5 +1,21 @@
 <script>
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+    import 'swiper/css';
+    import 'swiper/css/pagination';
+    import '../style.css';
+    import { Mousewheel, Keyboard, Pagination } from 'swiper/modules';
 
+    export default {
+        components: {
+        Swiper,
+        SwiperSlide,
+        },
+        setup() {
+            return {
+                modules: [Mousewheel, Keyboard, Pagination],
+            };
+        },
+    };
 </script>
 
 <template>
@@ -8,20 +24,18 @@
         <div>
             <h3>Compétences mises en oeuvre : </h3>
             <ul class="competences">
-                <li>Gérer le patrimoine informatique</li>
-                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution</li>
-                <li>Développer la présence en ligne de l’organisation</li>
-                <li>Organiser son développement professionnel</li>
+                <li>Gérer le patrimoine informatique (B1.1)</li>
+                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution (B1.2)</li>
+                <li>Développer la présence en ligne de l’organisation (B1.3)</li>
+                <li>Organiser son développement professionnel (B1.6)</li>
             </ul>
         </div>
         <p class="descriptionProjet">
             Projet de site de vente de casques pour moto réalisé dans le cadre
             de ma première année de BTS, afin de nous initier au bases du développement web
-        </p>
-
-        <div class="content">
-
-            <img class="image" src="..\assets\Nolark\logo.png" alt="logo de Nolark"/>
+        </p> 
+    </div>
+    <div class="content">
             
             <div class="listTechno">
                 <p class="texteTechno">Technologies utilisées : </p>
@@ -37,23 +51,41 @@
             <p class="texteExplicatif">
                 L'un des premiers projets réalisés durant le BTS, il s'agit d'un projet de site de vente de casques pour moto,
                 construit avec HTML, CSS et JavaScript dans sa version classique.
+
+                <p>Par la suite, j'ai utilisé PHP pour récupérer les casques dans une base de données mysql.</p>
             </p>
 
-            <img class="image" src="..\assets\Nolark\PageAccueil.png" alt="page d'accueil de Nolark"/>
-            
-            <p class="texteExplicatif">
-                j'ai ensuite utilisé
-                PHP afin de pouvoir récupérer les casques dans une base de données.
-            </p>
-
-            <img class="image" src="..\assets\Nolark\Casques.png" alt="page d'accueil de Nolark"/>
+            <swiper
+                :slidesPerView="1"
+                :spaceBetween="0"
+                :keyboard="{
+                    enabled: true,
+                }"
+                
+                :pagination="{
+                    clickable: true,
+                    dynamicBullets: true,
+                }"
+                :rewind="true"
+                :modules="modules"
+                class="mySwiper"
+            >
+                <swiper-slide>
+                    <img class="image" src="..\assets\Nolark\PageAccueil.png" alt="Page d'accueil de Nolark"/>
+                </swiper-slide>
+                <swiper-slide>
+                    <img class="image" src="..\assets\Nolark\Casques.png" alt="Page des casques"/>
+                </swiper-slide>
+            </swiper>
        </div>
-       
-    </div>
 
 </template>
 
 <style scoped>
+
+    .mySwiper {
+        background-color: rgb(237, 237, 237);
+    }
 
     i {
         font-size: 5em;
@@ -99,7 +131,7 @@
     }
 
     .image {
-        width: 55%;
+        width: 100%;
     }
 
     .texteExplicatif {
@@ -107,6 +139,11 @@
         text-align: center;
         margin-top: 3cap;
         margin-bottom: 3cap;
+    }
+
+    .texte {
+        width: 40%;
+        text-align: center;
     }
 
     .descriptionProjet {

@@ -1,5 +1,21 @@
 <script>
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+    import 'swiper/css';
+    import 'swiper/css/pagination';
+    import '../style.css';
+    import { Mousewheel, Keyboard, Pagination } from 'swiper/modules';
 
+    export default {
+        components: {
+        Swiper,
+        SwiperSlide,
+        },
+        setup() {
+            return {
+                modules: [Mousewheel, Keyboard, Pagination],
+            };
+        },
+    };
 </script>
 
 <template>
@@ -8,12 +24,12 @@
         <div>
             <h3>Compétences mises en oeuvre : </h3>
             <ul class="competences">
-                <li>Gérer le patrimoine informatique</li> 
-                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution</li>
-                <li>Développer la présence en ligne de l’organisation</li>
-                <li>Travailler en mode projet</li>
-                <li>Mettre à disposition des utilisateurs un service informatique</li>
-                <li>Organiser son développement professionnel</li>
+                <li>Gérer le patrimoine informatique (B1.1)</li> 
+                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution (B1.2)</li>
+                <li>Développer la présence en ligne de l’organisation (B1.3)</li>
+                <li>Travailler en mode projet (B1.4)</li>
+                <li>Mettre à disposition des utilisateurs un service informatique (B1.5)</li>
+                <li>Organiser son développement professionnel (B1.6)</li>
             </ul>
         </div>
         <p class="descriptionProjet">
@@ -24,8 +40,6 @@
     </div>
 
     <div class="content">
-
-            <img class="image" src="..\assets\GSB\logo.png" alt="logo de GSB"/>
 
             <div class="listTechno">
                 <p class="texteTechno">Technologies utilisées : </p>
@@ -38,38 +52,45 @@
                 </div>
             </div>
 
-            <p class="texteExplicatif">
-                La première étape fut de distinguer les visiteurs médicaux qui indiquent leurs frais, et
-                les comptables qui valident et mettent en paiement (ou pas) ces frais. Pour cela, j'ai utilisé une vue
-                dans la base de données.
+            <p class="texte">
+                Il s'agit d'un projet réalisé principalement avec PHP (et HTML) en suivant le pattern
+                "Modèle - Vue - Contrôleur" (MVC). Il fait appel à une base de données Mariadb.
             </p>
 
-            <img class="image" src="..\assets\GSB\Connexion.png" alt="page de connexion de GSB"/>
-            
-            <p class="texteExplicatif">
-                Une fois connecté en temps que comptable, j'ai accès à deux fonctionnalités : la validation
-                d'une fiche de frais d'un visiteur tel mois, et la mise en paiement des fiches de frais validées.
+            <p class="texteExplicatif">         
+                L'application se décline en une version "visiteur médical" et une version "comptable". 
+                Les principales fonctionnalités rajoutées sont la possibilité pour un comptable de valider ou non
+                une fiche de frais, la possibilité de la mettre en paiement, ainsi qu'un certain nombre de tâches diverses
+                (génération de la documentation, sécurisation des mots de passe avec un hash, optimisation, etc...).
             </p>
 
-            <img class="image" src="..\assets\GSB\ConnecteComptable.png" alt="page d'accueil comptable de GSB"/>
-
-            <p class="texteExplicatif">
-                Dans le premier onglet, on choisis un visiteur puis un mois pour afficher la fiche de frais. On 
-                sépare les frais forfaitisés, que l'on peut modifier si une erreur a été commise
-                par le visiteur, et les frais hors forfait, que l'on peut corriger si erreur, supprimer si non acceptables, ou 
-                reporter au mois suivant si les justificatifs n'ont pas été reçus. Une fois tout en ordre, on peut valider la 
-                fiche de frais.
-            </p>
-
-            <img class="image" src="..\assets\GSB\ValiderFicheFrais.png" alt="Valider une fiche de frais"/>
-
-            <p class="texteExplicatif">
-                Dans le deuxième onglet, on choisis une fiche de frais à rembourser.
-                Le comptable effectue les opérations de son côté, et indique que la fiche est 
-                remboursée quand il a fini.
-            </p>
-
-            <img class="image" src="..\assets\GSB\paiementFrais.png" alt="Suivre le paiement d'une fiche de frais"/>
+            <swiper
+                :slidesPerView="1"
+                :spaceBetween="0"
+                :keyboard="{
+                    enabled: true,
+                }"
+                :pagination="{
+                    clickable: true,
+                }"
+                :rewind="true"
+                :navigation="true"
+                :modules="modules"
+                class="mySwiper"
+            >
+            <swiper-slide>
+                <img class="image" src="..\assets\GSB\Connexion.png" alt="page de connexion de GSB"/>
+            </swiper-slide>
+            <swiper-slide>
+                <img class="image" src="..\assets\GSB\ConnecteComptable.png" alt="page d'accueil comptable de GSB"/>
+            </swiper-slide>
+            <swiper-slide>
+                <img class="image" src="..\assets\GSB\ValiderFicheFrais.png" alt="Valider une fiche de frais"/>
+            </swiper-slide>
+            <swiper-slide>
+                <img class="image" src="..\assets\GSB\paiementFrais.png" alt="Suivre le paiement d'une fiche de frais"/>
+            </swiper-slide>
+        </swiper>
   
        </div>
     
@@ -78,6 +99,10 @@
 </template>
 
 <style scoped>
+
+    .mySwiper {
+        background-color: rgb(255, 255, 255);
+    }
 
     i {
         font-size: 5em;
@@ -123,7 +148,7 @@
     }
 
     .image {
-        width: 55%;
+        width: 100%;
     }
 
     .texteExplicatif {
@@ -131,6 +156,11 @@
         text-align: center;
         margin-top: 3cap;
         margin-bottom: 3cap;
+    }
+
+    .texte {
+        width: 40%;
+        text-align: center;
     }
 
     .descriptionProjet {

@@ -44,6 +44,7 @@
         margin: 0px;
         margin-top: 2px;
         margin-bottom: 2px;
+        margin-left: 1.5cap;
     }
 
     .res {
@@ -54,6 +55,7 @@
     .titre {
         margin: 0px;
         margin-bottom: 30px;
+        margin-left: 1.5cap;
     }
 
     .el {
