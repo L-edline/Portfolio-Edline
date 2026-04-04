@@ -182,10 +182,6 @@
         background-color: rgb(172, 165, 165); 
     }
 
-    .tileType:focus{
-        background-color: rgb(141, 251, 141);
-    }
-
     .tile {
         margin-right: 2cap;
         margin-left: 2cap;
@@ -198,10 +194,6 @@
     }
 
     .tile:hover {
-        background-color: rgb(58, 130, 58);
-    }
-
-    .tile:focus{
         background-color: rgb(58, 130, 58);
     }
 

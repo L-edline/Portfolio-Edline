@@ -48,12 +48,12 @@
                 </div>
             </div> 
 
-            <p class="texteExplicatif">
+            <div class="texteExplicatif">
                 L'un des premiers projets réalisés durant le BTS, il s'agit d'un projet de site de vente de casques pour moto,
                 construit avec HTML, CSS et JavaScript dans sa version classique.
 
                 <p>Par la suite, j'ai utilisé PHP pour récupérer les casques dans une base de données mysql.</p>
-            </p>
+            </div>
 
             <swiper
                 :slidesPerView="1"
