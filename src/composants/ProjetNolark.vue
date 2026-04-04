@@ -32,7 +32,7 @@
         </div>
         <p class="descriptionProjet">
             Projet de site de vente de casques pour moto réalisé dans le cadre
-            de ma première année de BTS, afin de nous initier au bases du développement web
+            de ma première année de BTS, afin de nous initier aux bases du développement web
         </p> 
     </div>
     <div class="content">
