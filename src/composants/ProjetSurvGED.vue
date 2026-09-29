@@ -21,15 +21,6 @@
 <template>
     <div class="introProjet">
        <h2 class="nomProjet">Projet "Surveillance GED"</h2>
-       <div>
-            <h3>Compétences mises en oeuvre : </h3>
-            <ul class="competences">
-                <li>Gérer le patrimoine informatique (B1.1)</li>
-                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution (B1.2)</li>
-                <li>Travailler en mode projet (B1.4)</li>
-                <li>Organiser son développement professionnel (B1.6)</li>
-            </ul>
-        </div>
         <p class="descriptionProjet">
             Projet de surveillance de la Gestion Electronique des documents
             réalisé dans le cadre de mon stage de deuxième année de BTS 

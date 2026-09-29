@@ -21,15 +21,6 @@
 <template>
     <div class="introProjet">
         <h2 class="nomProjet">Projet Nolark</h2>
-        <div>
-            <h3>Compétences mises en oeuvre : </h3>
-            <ul class="competences">
-                <li>Gérer le patrimoine informatique (B1.1)</li>
-                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution (B1.2)</li>
-                <li>Développer la présence en ligne de l’organisation (B1.3)</li>
-                <li>Organiser son développement professionnel (B1.6)</li>
-            </ul>
-        </div>
         <p class="descriptionProjet">
             Projet de site de vente de casques pour moto réalisé dans le cadre
             de ma première année de BTS, afin de nous initier aux bases du développement web
@@ -52,7 +43,7 @@
                 L'un des premiers projets réalisés durant le BTS, il s'agit d'un projet de site de vente de casques pour moto,
                 construit avec HTML, CSS et JavaScript dans sa version classique.
 
-                <p>Par la suite, j'ai utilisé PHP pour récupérer les casques dans une base de données mysql.</p>
+                <p>Par la suite, j'ai réalisé une deuxième version du site avec PHP qui récupère les casques de manière dynamique dans une base de données mysql.</p>
             </div>
 
             <swiper

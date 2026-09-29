@@ -21,17 +21,6 @@
 <template>
     <div class="introProjet">
        <h2 class="nomProjet">Projet Credit General Banque</h2>
-       <div>
-            <h3>Compétences mises en oeuvre : </h3>
-            <ul class="competences">
-                <li>Gérer le patrimoine informatique (B1.1)</li> 
-                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution (B1.2)</li>
-                <li>Développer la présence en ligne de l’organisation (B1.3)</li>
-                <li>Travailler en mode projet (B1.4)</li>
-                <li>Mettre à disposition des utilisateurs un service informatique (B1.5)</li>
-                <li>Organiser son développement professionnel (B1.6)</li>
-            </ul>
-        </div>
         <p class="descriptionProjet">
             Projet d'api REST pour les virements en lots réalisé dans le cadre
             de ma deuxième année de BTS, afin de mettre en pratique les connaissances acquises en

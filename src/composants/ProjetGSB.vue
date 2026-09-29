@@ -21,21 +21,10 @@
 <template>
     <div class="introProjet">
         <h2 class="nomProjet">Projet Galaxy Swiss Bourdin</h2>
-        <div>
-            <h3>Compétences mises en oeuvre : </h3>
-            <ul class="competences">
-                <li>Gérer le patrimoine informatique (B1.1)</li> 
-                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution (B1.2)</li>
-                <li>Développer la présence en ligne de l’organisation (B1.3)</li>
-                <li>Travailler en mode projet (B1.4)</li>
-                <li>Mettre à disposition des utilisateurs un service informatique (B1.5)</li>
-                <li>Organiser son développement professionnel (B1.6)</li>
-            </ul>
-        </div>
         <p class="descriptionProjet">
-            Projet de site de gestion des frais de visiteurs médicaux réalisé dans le cadre
+            Projet de site de gestion des frais des employés de l'entreprise (fictive) Galaxy Swiss Bourdin (GSB) réalisé dans le cadre
             de ma deuxième année de BTS, afin de mettre en pratique les connaissances acquises en
-            dévelopemment web, gestion de version / projet et cybersécurité.
+            dévelopemment web, gestion de version, gestion de projet et cybersécurité.
         </p>
     </div>
 
@@ -54,15 +43,23 @@
 
             <p class="texte">
                 Il s'agit d'un projet réalisé principalement avec PHP (et HTML) en suivant le pattern
-                "Modèle - Vue - Contrôleur" (MVC). Il fait appel à une base de données Mariadb.
+                "Modèle - Vue - Contrôleur" (MVC). Il fait appel à une base de données MariaDB.
             </p>
 
             <p class="texteExplicatif">         
-                L'application se décline en une version "visiteur médical" et une version "comptable". 
+                L'application possède une interface "employé" et une interface "comptable", 
+                en fonction du rôle affecté à l'utilisateur au moment de la création du compte.
+                Les employés (qui sont des visiteurs médicaux) remplissent leur fiche de frais à rembourser, et les comptables valident (ou non) ces fiches
+                pour un remboursement.  
+            </p>
+
+            <p class="texteExplicatif">
+                L'interface "employé" faisant partie de l'existant, 
                 Les principales fonctionnalités rajoutées sont la possibilité pour un comptable de valider ou non
                 une fiche de frais, la possibilité de la mettre en paiement, ainsi qu'un certain nombre de tâches diverses
-                (génération de la documentation, sécurisation des mots de passe avec un hash, optimisation, etc...).
+                (génération de la documentation, sécurisation du stockage des mots de passe, optimisation, etc...).
             </p>
+
 
             <swiper
                 :slidesPerView="1"

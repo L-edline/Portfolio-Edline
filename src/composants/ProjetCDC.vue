@@ -21,16 +21,6 @@
 <template>
     <div class="introProjet">
        <h2 class="nomProjet">Formulaire de Comité de Conformité</h2>
-       <div>
-            <h3>Compétences mises en oeuvre : </h3>
-            <ul class="competences">
-                <li>Gérer le patrimoine informatique (B1.1)</li>
-                <li>Répondre aux incidents et aux demandes d’assistance et d’évolution (B1.2)</li>
-                <li>Travailler en mode projet (B1.4)</li>
-                <li>Mettre à disposition des utilisateurs un service informatique (B1.5)</li>
-                <li>Organiser son développement professionnel (B1.6)</li>
-            </ul>
-        </div>
         <p class="descriptionProjet">
             Projet de formulaire de demande de comité de conformité 
             réalisé dans le cadre de mon stage de première année de BTS 

@@ -21,14 +21,6 @@
 <template>
     <div class="introProjet">
        <h2 class="nomProjet">Outil d'aide au jeu depuis une API</h2>
-       <div>
-            <h3>Compétences mises en oeuvre : </h3>
-            <ul class="competences">
-                <li>Travailler en mode projet (B1.4)</li>
-                <li>Mettre à disposition des utilisateurs un service informatique (B1.5)</li>
-                <li>Organiser son développement professionnel (B1.6)</li>
-            </ul>
-        </div>
         <p class="descriptionProjet">
             Projet de mise en forme de l'API pokéAPI réalisé en premier lieu pour m'exercer, en
             créant une sorte d'encyclopédie, qui a évolué en aide au jeu avec fonction de tri

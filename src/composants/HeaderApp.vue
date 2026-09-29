@@ -5,13 +5,15 @@
 <template>
 
     <div class="header">
+        <!--  
         <div class="el left">
             <router-link to="/CV" class="routeur">
                     <p>Curriculum Vitae</p>
             </router-link>
         </div>
+        --> 
 
-        <div class="el center">
+        <div class="el left">
             <router-link to="/" class="routeur">
                     <p>Accueil</p>
             </router-link>
